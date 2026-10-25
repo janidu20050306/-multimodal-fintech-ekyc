@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Fintech eKYC Risk Dashboard UI mockup</title>
+  <desc id="desc">Dark dashboard mockup showing a customer risk panel, an approval probability bar, and a face bounding box over a camera feed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060b16"/>
+      <stop offset="1" stop-color="#101d33"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1628"/>
+      <stop offset="1" stop-color="#080f1d"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e293b" stroke-width="0.6" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <rect x="24" y="24" width="1152" height="627" rx="24" fill="none" stroke="#1f2a44" stroke-width="2"/>
+
+  <text x="60" y="68" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="0.5">FINTECH eKYC RISK DASHBOARD</text>
+  <text x="60" y="90" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1.5">MULTIMODAL LOAN RISK + LIVE FACE DETECTION</text>
+
+  <rect x="1020" y="50" width="112" height="32" rx="16" fill="#2a0e12" stroke="#7f1d1d"/>
+  <circle cx="1042" cy="66" r="5" fill="#ef4444"/>
+  <text x="1056" y="71" fill="#fca5a5" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">LIVE</text>
+
+  <rect x="60" y="120" width="460" height="330" rx="18" fill="url(#panel)" stroke="#1f2a44" stroke-width="1.5"/>
+  <text x="84" y="154" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">CUSTOMER RISK SNAPSHOT</text>
+  <line x1="84" y1="168" x2="496" y2="168" stroke="#1e293b"/>
+
+  <text x="84" y="200" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">Customer ID</text>
+  <text x="230" y="200" fill="#e2e8f0" font-family="Consolas, 'Courier New', monospace" font-size="14">2bfad44e...</text>
+
+  <text x="84" y="238" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">DTI Ratio</text>
+  <text x="230" y="238" fill="#e2e8f0" font-family="Consolas, 'Courier New', monospace" font-size="14">0.34</text>
+
+  <text x="84" y="276" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">Approval Probability</text>
+  <text x="496" y="276" fill="#4ade80" font-family="Consolas, 'Courier New', monospace" font-size="18" font-weight="700" text-anchor="end">99.9%</text>
+  <rect x="84" y="292" width="412" height="10" rx="5" fill="#16233a"/>
+  <rect x="84" y="292" width="411" height="10" rx="5" fill="url(#bar)"/>
+
+  <text x="84" y="334" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">Faces Detected</text>
+  <text x="230" y="334" fill="#facc15" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700">1</text>
+
+  <text x="84" y="372" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">Loan Amount</text>
+  <text x="230" y="372" fill="#e2e8f0" font-family="Consolas, 'Courier New', monospace" font-size="14">$5,000.00</text>
+
+  <text x="84" y="410" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="13">Interest Rate</text>
+  <text x="230" y="410" fill="#e2e8f0" font-family="Consolas, 'Courier New', monospace" font-size="14">5.87%</text>
+
+  <text x="620" y="154" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">CAMERA / eKYC FEED</text>
+  <rect x="620" y="170" width="520" height="390" rx="18" fill="#08111f" stroke="#1f2a44" stroke-width="1.5"/>
+
+  <g opacity="0.18" stroke="#38bdf8" stroke-width="1">
+    <line x1="620" y1="210" x2="1140" y2="210"/>
+    <line x1="620" y1="250" x2="1140" y2="250"/>
+    <line x1="620" y1="290" x2="1140" y2="290"/>
+    <line x1="620" y1="330" x2="1140" y2="330"/>
+    <line x1="620" y1="370" x2="1140" y2="370"/>
+    <line x1="620" y1="410" x2="1140" y2="410"/>
+    <line x1="620" y1="450" x2="1140" y2="450"/>
+    <line x1="620" y1="490" x2="1140" y2="490"/>
+    <line x1="620" y1="530" x2="1140" y2="530"/>
+  </g>
+
+  <circle cx="880" cy="330" r="78" fill="#16233a" stroke="#2b3b57" stroke-width="2"/>
+  <path d="M760 540 C775 450 820 415 880 415 C940 415 985 450 1000 540 Z" fill="#16233a" stroke="#2b3b57" stroke-width="2"/>
+
+  <rect x="792" y="242" width="176" height="176" rx="8" fill="none" stroke="#22d3ee" stroke-width="3"/>
+  <path d="M792 270 L792 242 L820 242" fill="none" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M940 242 L968 242 L968 270" fill="none" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M792 390 L792 418 L820 418" fill="none" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M940 418 L968 418 L968 390" fill="none" stroke="#67e8f9" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="756" y="196" width="248" height="32" rx="8" fill="#0e7490"/>
+  <text x="880" y="217" fill="#ecfeff" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="0.8">APPROVAL PROBABILITY 0.99</text>
+
+  <circle cx="66" cy="620" r="5" fill="#22c55e"/>
+  <text x="80" y="625" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1.5">LIVE STREAM - 640 x 480</text>
+  <text x="1140" y="625" fill="#475569" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="end">UI mockup - not a live capture</text>
+</svg>
