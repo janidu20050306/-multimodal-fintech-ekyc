@@ -46,20 +46,20 @@ The target column is `Loan Application Summary.loan_status`:
 | pending | 284 |
 | rejected | 268 |
 
-The CSV is about 22 MB. Before publishing, confirm that the data is synthetic or properly anonymized, and consider Git LFS or a smaller sample if needed.
+The CSV is about 22 MB and is included in this repository. If you reuse or redistribute it, confirm that the data is synthetic or properly anonymized, and consider Git LFS or a smaller sample if needed.
 
 ## Requirements
 
 - Python 3.10+ (tested on 3.14)
 - A webcam
-- `opencv-python` 4.x, `pandas`, `numpy`, `scikit-learn`
+- Dependencies listed in `requirements.txt`: `opencv-python` 4.x, `pandas`, `numpy`, `scikit-learn`
 
 OpenCV 5.x removed `cv2.CascadeClassifier` and the bundled Haar cascades, so this project pins OpenCV below 5.
 
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/fintech-ekyc-risk-dashboard.git
+git clone https://github.com/janidu20050306/-multimodal-fintech-ekyc.git fintech-ekyc-risk-dashboard
 cd fintech-ekyc-risk-dashboard
 
 python -m venv .venv
@@ -68,7 +68,7 @@ python -m venv .venv
 # macOS / Linux
 # source .venv/bin/activate
 
-pip install "opencv-python>=4.8,<5" pandas numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -99,6 +99,9 @@ To score a different customer, change `sample_idx` in `main.py`. To use a differ
 fintech-ekyc-risk-dashboard/
 |-- main.py
 |-- sampleDataset.csv
+|-- requirements.txt
+|-- LICENSE
+|-- .gitignore
 `-- README.md
 ```
 
@@ -107,7 +110,7 @@ fintech-ekyc-risk-dashboard/
 - Haar cascades detect frontal faces only and are sensitive to lighting, pose, and occlusion. There is no face recognition, liveness detection, or identity matching.
 - The model is trained and scored on the same data, with no train/test split, calibration, or fairness evaluation. The displayed probability is illustrative.
 - `pending` is treated as a separate class, so the demo does not model a binary approve/reject decision boundary.
-- The sample dataset includes customer and account fields that may be sensitive. Review and anonymize before making the repository public.
+- The sample dataset includes customer and account fields that may be sensitive. Review and anonymize it before redistributing or reusing it in another project.
 
 ## Roadmap
 
@@ -119,4 +122,4 @@ fintech-ekyc-risk-dashboard/
 
 ## License
 
-MIT is a good default for a public demo repository. Add a `LICENSE` file before publishing.
+Released under the MIT License. See [LICENSE](LICENSE).
